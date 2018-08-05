@@ -1,0 +1,70 @@
+{
+  "accents": {
+
+  },
+    "countries": {
+      "ab": {
+        "coords": {
+          "ne": {
+            "lat": 46.1558924,
+            "lng": 23.555612099999962
+          }
+        },
+        "name": "Alba",
+        "order": 1,
+        "published": true,
+        "zoom": 6
+      },
+      "ar": {
+        "coords": {
+          "ne": {
+            "lat": 46.1865606,
+            "lng": 21.312267700000007
+          }
+        },
+        "name": "Arad",
+        "order": 2,
+        "published": true,
+        "zoom": 6
+      },
+      "ag": {
+        "coords": {
+          "ne": {
+            "lat": 45.0722527,
+            "lng": 24.81427259999998
+          }
+        },
+        "name": "Arges",
+        "order": 3,
+        "published": true,
+        "zoom": 6
+      },
+      "bc": {
+        "coords": {
+          "ne": {
+            "lat": 46.5670437,
+            "lng": 26.91457479999997
+          }
+        },
+        "name": "Bacau",
+        "order": 4,
+        "published": true,
+        "zoom": 6
+      },
+      "bh": {
+        "coords": {
+          "ne": {
+            "lat": 47.01575159999999,
+            "lng": 22.172266000000036
+          }
+        },
+        "name": "Bihor",
+        "order": 5,
+        "published": true,
+        "zoom": 6
+      }
+    }
+  }
+
+  
+  
