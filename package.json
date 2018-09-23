@@ -80,9 +80,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ismaelgt/english-accents-map.git"
+    "url": "git+https://github.com/kyokidG/harta-ajutor-reciproc.git"
   },
-  "author": "Ismael González Trujillo <ismael.gonzaleztrujillo@gmail.com>",
+  "author": "Geeorge Brata <bratageorge@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",

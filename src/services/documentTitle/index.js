@@ -1,6 +1,5 @@
-const DOCUMENT_MAIN_TITLE = 'English Accents Map'
-const DOCUMENT_DEFAULT_TITLE = 'Harta Ajutor Reciproc - ' + DOCUMENT_MAIN_TITLE
+const DOCUMENT_MAIN_TITLE = 'Harta Ajutor Reciproc'
 
 export default function makeDocumentTitle (title = null) {
-  return title ? title + ' - ' + DOCUMENT_MAIN_TITLE : DOCUMENT_DEFAULT_TITLE
+  return title ? title + ' - ' + DOCUMENT_MAIN_TITLE : DOCUMENT_MAIN_TITLE
 }
