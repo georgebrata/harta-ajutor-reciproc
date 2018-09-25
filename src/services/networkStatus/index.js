@@ -8,7 +8,7 @@ export default function init (store) {
     store.dispatch(networkStatusChange(window.navigator.onLine))
 
     showSnackbarMessage({
-      message: window.navigator.onLine ? 'You are back online' : 'You have gone offline'
+      message: window.navigator.onLine ? 'Perfect! Ai revenit online.' : 'Oups! Ai pierdut conexiunea la internet.'
     })
 
     if (window.navigator.onLine) {

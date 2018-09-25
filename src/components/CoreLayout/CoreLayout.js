@@ -27,7 +27,7 @@ class CoreLayout extends React.Component {
         <header className='mdl-layout__header'>
           <div className='mdl-layout__header-row'>
             <Link to='/' className='mdl-layout-title'>
-              <span>Harta</span><strong>Ajutor</strong><span>Reciproc</span>
+              <span>Harta Ajutor Reciproc - ClubOpel.com</span>
             </Link>
             <div className='mdl-layout-spacer' />
           </div>
@@ -35,7 +35,7 @@ class CoreLayout extends React.Component {
         <div id='mdl-layout__drawer' className='mdl-layout__drawer' ref='drawer'>
           <div className='mdl-layout__drawer-header'>
             <div className='mdl-layout__logo-wrapper'>
-              <img className='mdl-layout__logo' src='/images/logo.png' alt='English Accents Map' />
+              <img className='mdl-layout__logo' src='/images/logo.png' alt='Harta Ajutor Reciproc - ClubOpel.com' />
             </div>
             <span className='mdl-layout-title'>
               <span>Harta</span><strong>Ajutor</strong><span>Reciproc</span>

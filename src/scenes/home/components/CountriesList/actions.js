@@ -1,9 +1,8 @@
-import firebase from 'firebase/app'
-import 'firebase/database'
 
 export const REQUEST_COUNTRIES = 'REQUEST_COUNTRIES'
 export const RECEIVE_COUNTRIES = 'RECEIVE_COUNTRIES'
 export const SELECT_COUNTRY = 'SELECT_COUNTRY'
+let SHEET_URL = "https://docs.google.com/spreadsheets/d/11gLJ6b-EYE1f96XzYjlANgq7mzmNGIgJs4O5__uGRFA/pubhtml";
 
 export const requestCountries = () => ({
   type: REQUEST_COUNTRIES
@@ -26,18 +25,13 @@ export const selectCountry = (selectedId) => ({
 export const loadCountries = () => {
   return (dispatch) => {
     dispatch(requestCountries())
-    firebase.database()
-      .ref('/countries')
-      .orderByChild('published')
-      .equalTo(true)
-      .once('value')
-      .then((snapshot) => {
-        const byId = snapshot.val()
-        let orderedIds = []
-        snapshot.forEach(function (item) {
-          orderedIds.push(item.key)
-        })
-        dispatch(receiveCountries(byId, orderedIds))
-      })
+
+    Tabletop.init({
+      key: SHEET_URL,
+      callback: function (data, tabletop) {
+        console.log(data, tabletop)
+      },
+      simpleSheet: false
+    })
   }
 }

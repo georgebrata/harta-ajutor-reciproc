@@ -88,7 +88,7 @@ if (!__TEST__) {
       names : ['vendor']
     }),
     new SWPrecacheWebpackPlugin({
-      cacheId: 'english-accents-map',
+      cacheId: 'harta-ajutor-reciproc',
       filename: 'sw.js',
       verbose: true,
       runtimeCaching: [{

@@ -93,23 +93,27 @@ class Map extends React.Component {
   // Create one marker in the map for each accent
   loadMarkers (accents, countries) {
     const { google } = this.props
-
-    Object.keys(accents.byId).forEach((id) => {
-      const accent = accents.byId[id]
-      if (!accent.coords || !countries.byId[accent.country]) {
-        return
-      }
-      const marker = new google.maps.Marker({
-        position: accent.coords
-      })
-      marker.addListener('click', () => {
-        if (this.state.accentSelected !== id) {
-          history.push('/' + accent.country + '/' + id + '/#' + accent.videos[0])
+    if(accents.byId) {
+      debugger;
+      Object.keys(accents.byId).forEach((id) => {
+        const accent = accents.byId[id]
+        if (!accent.coords || !countries.byId[accent.country]) {
+          return
         }
+        const marker = new google.maps.Marker({
+          position: accent.coords
+        })
+        marker.addListener('click', () => {
+          if (this.state.accentSelected !== id) {
+            history.push('/' + accent.country + '/' + id + '/#' + accent.videos[0])
+          }
+        })
+        marker.setMap(this.map)
       })
-      marker.setMap(this.map)
-    })
-    this.state.markersRendered = true
+      this.state.markersRendered = true
+
+    }
+    
   }
 
   // Fit country in map using South West and North East coordinates

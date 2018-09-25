@@ -1,9 +1,9 @@
 const GOOGLE_MAPS_CONFIG = {
-  center: { lat: 53.492185, lng: -2.244880 }, // Manchester!
-  zoom: 6,
+  center: { lat: 45.9696605, lng: 23.9549458 }, // Manchester!
+  zoom: 7.5,
   zoomControl: true,
-  mapTypeControl: false,
-  scaleControl: false,
+  mapTypeControl: true,
+  scaleControl: true,
   streetViewControl: false,
   rotateControl: false,
   fullscreenControl: false,

@@ -1,11 +1,8 @@
 /* TEAM */
 
-Dev: Ismael González Trujillo
-Contact: ismael [at] englishaccentsmap.com
-Twitter: @ismaelgtr
-Location: Bristol, UK
+Dev: Brata George
+Contact: bratageorge [at] gmail.com
+Twitter: @bratageorge
+Location: Cluj-Napoca, Romania
 
-/* THANKS */
 
-UX tips: Zita Orbán
-Twitter: @xiplecouk
